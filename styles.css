@@ -1,0 +1,64 @@
+:root{
+    margin: 5px;
+}
+
+body{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.leftSide{
+    background-color: rgb(152, 70, 70);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 450px;
+    height: 800px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    z-index: -1;
+}
+
+.credit{
+    justify-self: flex-end;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    width: 500px;
+    height: 800px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+}
+
+button{
+    margin: 10px;
+    background-color: rgb(3, 3, 8);
+    color: white;   
+}
+
+.leftCol{
+    flex-direction: column;
+    margin: 5px;
+}
+
+.rightCol{
+    flex-direction: column;
+    margin: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+}
+
+ 
