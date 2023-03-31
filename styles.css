@@ -4,6 +4,7 @@
 
 body{
     display: flex;
+    margin: 0px;
 }
 
 .leftSide{
@@ -32,39 +33,62 @@ img{
     text-align: center;
     margin-top: 65%;
     margin-bottom: auto;
+    margin-left: 15px;
+    margin-right: 15px;
     color:aliceblue;
-    background-color: rgba(25, 25, 25, 0.412);
+    background-color: rgba(25, 25, 25, 0.634);
 }
 
 .rightSide{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: rgb(242, 241, 241);
     width: 600px;
     height: 900px;
-    padding-left: 15px;
-    padding-right: 15px;
-    justify-content: center;
+    padding-left: 45px;
+    padding-right: 80px;
 }
 
-button{
-    margin: 10px;
-    background-color: #596D48;
-    color: white;   
-}
-
-.leftCol{
-    flex-direction: column;
-    margin: 5px;
-}
-
-.rightCol{
-    flex-direction: column;
-    margin: 5px;
+.description{
+    margin-bottom: 30px;
 }
 
 form{
     display: flex;
-    flex-direction: row;
+    padding: 5px;
 }
- 
+
+.leftCol{
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.rightCol{
+    flex-direction: column;
+}
+
+label{
+    margin-left: 2px;
+}
+
+input{
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+}
+
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #596D48;
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-size: 17px;
+}
+
+input, button{
+    border: 1px solid #E5E7EB;
+    border-radius: 7px;
+}

@@ -14,9 +14,12 @@
         <div class="credit">Photo by Halie West on Unsplash</div>
     </div>
     <div class="rightSide">
-        <h2>Welcome! Just to let you know, remember not to allow client side infromation on your server side without validation.</h2>
-        <h2>The more validation the merrier.</h2>
-        <h2>Let's do this!</h2>
+        <div class="description">
+            <h2>Welcome! Just to let you know, remember not to allow client side infromation on your server side without validation. 
+                <br>The more validation the merrier. 
+                <br><br>Let's do this!
+            </h2>
+        </div>
         <form>
             <div class="leftCol">
                     <label for="firstName">First Name</label>
@@ -41,7 +44,7 @@
                 </div>  
                 <label for="phoneNumber">Phone Number</label>
                 <div>
-                    <input type="number" id="phoneNumber" name="Phone Number">
+                    <input type="tel" id="phoneNumber" name="Phone Number">
                 </div>  
                 <label for="passwordConfirm">Confirm Password</label>
                 <div>
@@ -50,7 +53,8 @@
             </div>
         </form>
         <button type="submit">Create Account</button>
-        <h3>Already have an account? <a href="https://www.w3schools.com/">Log in</a></h3>
+        <div>Already have an account? <a href="https://www.w3schools.com/">Log in</a></div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
