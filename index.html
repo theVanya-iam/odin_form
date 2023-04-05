@@ -9,8 +9,10 @@
 </head>
 <body>
     <div class="leftSide">
-        <img src="./greenBG.webp" alt="Close-up of a green forest">
-        <div class="title">Odin</div>
+        <div class="title">
+            <img class="logo" src="./viking.png">
+            <p>Odin</p>
+        </div>
         <div class="credit">Photo by Halie West on Unsplash</div>
     </div>
     <div class="rightSide">
@@ -24,17 +26,17 @@
             <div class="leftCol">
                     <label for="firstName">First Name</label>
                     <div>
-                        <input type="text" id="firstName" name="First Name">
+                        <input type="text" id="firstName" name="First Name" required>
                     </div>
                     
                     <label for="email">Email</label>
                     <div>
-                        <input type="email" id="email" name="Email">
+                        <input type="email" id="email" name="Email" required>
                     </div>
                     
                     <label for="password">Password</label>
                     <div>
-                        <input type="password" id="password" name="Password">
+                        <input type="password" id="password" name="Password" required>
                     </div>
             </div>
             <div class="rightCol">
@@ -44,11 +46,11 @@
                 </div>  
                 <label for="phoneNumber">Phone Number</label>
                 <div>
-                    <input type="tel" id="phoneNumber" name="Phone Number">
+                    <input type="tel" id="phoneNumber" name="Phone Number" required>
                 </div>  
                 <label for="passwordConfirm">Confirm Password</label>
                 <div>
-                    <input type="password" id="passwordConfirm" name="Confirm Password">
+                    <input type="password" id="passwordConfirm" name="Confirm Password" required>
                 </div>
             </div>
         </form>
@@ -58,3 +60,6 @@
     <script src="./script.js"></script>
 </body>
 </html>
+
+
+<!-- <a href="https://www.flaticon.com/free-icons/viking" title="viking icons">Viking icons created by Freepik - Flaticon</a>-->
