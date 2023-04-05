@@ -17,6 +17,8 @@
 body{
     display: flex;
     margin: 0px;
+    height: 100vh;
+    width: 100vh;
 }
 
 /* left side */
@@ -27,12 +29,12 @@ body{
     background-size: cover;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .logo{
-    width: 125px;
-    height: 125px;
-    margin-bottom: 2.5rem;
+    height: 15vh;
+    margin-bottom: 1.5rem; 
 }
 
 .title{
@@ -41,7 +43,7 @@ body{
     justify-items: center;
     align-items: center;
     justify-items: center;
-    padding-top: 2rem;
+    padding: 1rem;
     margin-top: 65%;
     margin-bottom: auto;
     font-size: 8.5em;
@@ -52,7 +54,7 @@ body{
 .credit{
     color: antiquewhite;
     text-align: center;
-    margin: 20px;
+    margin: 2vh;
 }
 
 .leftSide > *, p{
@@ -63,37 +65,34 @@ body{
 
 .rightSide{
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(242, 241, 241);
-    width: 600px;
-    height: 900px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 5vw;
+    padding-right: 10vh;
 }
 
 .description{
-    margin-bottom: 30px;
+    margin-bottom: 4vh;
 }
 
 /* form */
 
 form{
     display: flex;
-    padding: 5px;
-}
-
-.leftCol{
-    flex-direction: column;
-    margin-right: 30px;
-}
-
-.rightCol{
-    flex-direction: column;
+    flex-flow: row wrap;
+    gap: 1vw;
+    padding: 0.5vw;
 }
 
 label{
     margin-left: 2px;
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap;
 }
 
 input{
