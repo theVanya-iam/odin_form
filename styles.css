@@ -16,19 +16,27 @@
 
 body{
     display: flex;
-    margin: 0px;
-    height: 100vh;
-    width: 100vh;
+    flex-wrap: row nowrap;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    min-height: 100vh;
+    width: 100vw;
 }
 
 /* left side */
 
 .leftSide{
     display: flex;
+    flex-flow: column;
+    flex: 3;
     background-image: url("./greenBG.webp");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40vw;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
+    text-align: center;
     align-items: center;
 }
 
@@ -41,12 +49,10 @@ body{
     display: flex;
     align-items: center;
     justify-items: center;
-    align-items: center;
-    justify-items: center;
     padding: 1rem;
     margin-top: 65%;
     margin-bottom: auto;
-    font-size: 8.5em;
+    font-size: 20vh;
     color:aliceblue;
     background-color: rgba(25, 25, 25, 0.634);
 }
@@ -65,8 +71,7 @@ body{
 
 .rightSide{
     display: flex;
-    flex-flow: column;
-    flex-wrap: wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     background-color: rgb(242, 241, 241);
     padding-left: 5vw;
@@ -100,6 +105,23 @@ input{
     border-radius: 7px;
     height: 1.5rem;
     width: 12rem;
+}
+
+:focus{
+    border: 1px solid rgb(162, 162, 246);
+    box-shadow: 1px 4px 9px 2px #888888;
+}
+
+.error{
+    border: 1px solid red;
+    box-shadow: 1px 4px 9px 2px #888888;
+}
+
+.error_message{
+    color: red;
+    margin-top: 5px;
+    font-size: 0.6em;
+    visibility: visible;
 }
 
 button{

@@ -25,27 +25,28 @@
         <form action="#">
                     <div class="input">
                         <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="First Name" required>
+                        <input type="text" id="firstName" name="First Name" placeholder="*Vanya"required>
                     </div>
                     <div class="input">
                         <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="Last Name">
+                        <input type="text" id="lastName" name="Last Name" placeholder="*Roman">
                     </div>
                     <div class="input">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="Email" required>
+                        <input type="email" id="email" name="Email" placeholder="*takeovertheworld@yahoo.com" required>
                     </div>
                     <div class="input">
                         <label for="phoneNumber">Phone Number</label>
-                        <input type="tel" id="phoneNumber" name="Phone Number" required>
+                        <input type="tel" id="phoneNumber" name="Phone Number" placeholder="*(123)456-7890" required>
                     </div>  
                     <div class="input">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="Password" required>
+                        <input type="password" id="password" name="Password" placeholder="*secret123" class="error" required>
+                        <span class="error_message">*passwords have to match</span>
                     </div>
                     <div class="input">
                         <label for="passwordConfirm">Confirm Password</label>
-                        <input type="password" id="passwordConfirm" name="Confirm Password" required>
+                        <input type="password" id="passwordConfirm" name="Confirm Password" placeholder="*secret123" class="error" required>
                     </div>
                     <div class="form_button">
                         <button type="submit">Create Account</button>
