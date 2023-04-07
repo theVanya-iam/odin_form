@@ -26,35 +26,40 @@ body{
 /* left side */
 
 .leftSide{
-    display: flex;
-    flex-flow: column;
-    flex: 3;
     background-image: url("./greenBG.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 40vw;
+    display: flex;
+    flex-flow: column;
+    flex: 3;
+    width: 40em;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     align-items: center;
 }
 
-.logo{
-    height: 15vh;
-    margin-bottom: 1.5rem; 
-}
-
 .title{
+    background-color: rgba(25, 25, 25, 0.634);
     display: flex;
     align-items: center;
     justify-items: center;
     padding: 1rem;
+    padding-top: 3rem;
     margin-top: 65%;
     margin-bottom: auto;
-    font-size: 20vh;
+}
+
+.logo{
+    height: 8rem;
+    margin-bottom: 2.5rem; 
+}
+
+.title > p{
     color:aliceblue;
-    background-color: rgba(25, 25, 25, 0.634);
+    line-height: 250px;
+    font-size: 8em;
 }
 
 .credit{
@@ -125,13 +130,13 @@ input{
 }
 
 button{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    color: white;
     background-color: #596D48;
     box-shadow: 1px 4px 9px 2px #888888;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 0px;
     border-radius: 7px;
-    color: white;
     width: 200px;
     height: 40px;
     font-size: 17px;
@@ -148,4 +153,19 @@ button:active{
 
 a:visited{
     color: rgb(138, 117, 232);
+}
+
+@media (max-width: 800px) {
+    .title {
+      flex-wrap: wrap;
+      display: inline;
+      padding-top: 2rem;
+    }
+    .logo{
+        width: 5rem;
+        height: 5rem;
+    }
+    .title > p{
+        line-height: 120px;
+    }
 }
