@@ -80,19 +80,19 @@ body{
     justify-content: center;
     background-color: rgb(242, 241, 241);
     padding-left: 5vw;
-    padding-right: 10vh;
+    padding-right: 12vh;
 }
 
 .description{
     margin-bottom: 4vh;
+    width: 40vw;
 }
 
 /* form */
-
 form{
     display: flex;
     flex-flow: row wrap;
-    gap: 1vw;
+    gap: 1.5vw;
     padding: 0.5vw;
 }
 
